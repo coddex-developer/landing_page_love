@@ -1,0 +1,29 @@
+.containerFooter {
+    height: 80px;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: black;
+}
+
+.pingFooter {
+    width: 40px;
+    margin: 0 auto;
+    padding: .1rem;
+    background-color: hotpink;
+    display: block;
+    border-radius: 30px;
+}
+
+.textFooter {
+    font-size: .7rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #E5E5E5;
+    margin-top: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.textFooter i {
+    color: red;
+    font-size: 9px;
+}

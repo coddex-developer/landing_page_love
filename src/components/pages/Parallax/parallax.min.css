@@ -1,0 +1,25 @@
+:root {
+    --gradient: linear-gradient(190deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+}
+
+.heroSection {
+    height: 100vh;
+    position: relative;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darkGlass {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: var(--gradient);
+}
+
+@media (max-width: 685px) {
+    .heroSection {
+        background-position: center;
+    }
+}

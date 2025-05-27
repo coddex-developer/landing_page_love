@@ -1,0 +1,9 @@
+:root {
+    --bg-section: #000;
+    --texth2-color: #E5E5E5;
+}
+.section {
+    padding: 3rem 0;
+    background-color: var(--bg-section);
+    color: var(--texth2-color);
+}
