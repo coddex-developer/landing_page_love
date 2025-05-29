@@ -1,5 +1,5 @@
 :root {
-    --gradient: linear-gradient(190deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    --gradient: linear-gradient(190deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
 }
 
 .heroSection {

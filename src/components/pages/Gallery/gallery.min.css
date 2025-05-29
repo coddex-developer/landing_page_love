@@ -1,0 +1,18 @@
+.galleryContainer {
+  width: 350px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.galleryContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 350px) {
+  .galleryContainer {
+    width: 90%;
+    padding: 0 1rem;
+  }
+}
