@@ -6,8 +6,8 @@ import Footer from "../Footer";
 import Gallery from "../Gallery";
 
 function HeroSection() {
-    const nomeA = "Juliana Rocha da Silva";
-    const nomeB = "Rafael da Luz Silva";
+    const nomeA = "Juliana";
+    const nomeB = "Rafael";
 
     useEffect(() => {
         const classElements = document.querySelectorAll(".sectionPrimary, li, .videosMp4, .heroTexts, .secondTitle");
@@ -25,10 +25,8 @@ function HeroSection() {
         <>
             <Parallax image="/images/parallaxImages/bg-01.jpg">
                 <div className="heroTexts">
-                    <h1>Nosso <span className="spn">Amor</span> em Celebração</h1>
-                    <p>{nomeA}</p>
-                    <p>e</p>
-                    <p>{nomeB}</p>
+                    <h1 style={{ color: "#e5e5e5" }}>{nomeA} e {nomeB}</h1>
+                    <p style={{ color: "#e5e5e5" }}>19/04/2018</p>
                 </div>
                 <div className="hearts-effect">
                     <ul>
@@ -52,40 +50,39 @@ function HeroSection() {
                 <Gallery />
                 <p className="intro-paragraph">
                     Cada momento ao seu lado é uma página de uma história que eu quero escrever para sempre.
+                    <br />
                     Uma jornada que começou com um olhar e floresceu no mais puro amor.
                 </p>
             </Section>
 
             <Parallax image="/images/parallaxImages/bg-02.jpg">
                 <div className="heroTexts">
-                    <h1>Nosso Encontro</h1>
+                    <h1>Nosso Casamento</h1>
                     <p>Foi como se o universo conspirasse para nos unir, e desde então, cada dia é uma nova aventura ao seu lado.</p>
                 </div>
             </Parallax>
 
             <Section>
                 <ul className="list-hero">
-                    <li><i className="bi bi-heart-fill"></i> Nosso primeiro olhar foi como um raio de luz, iluminando meu coração.</li>
                     <li><i className="bi bi-heart-fill"></i> O dia em que nos conhecemos foi o início de uma história que eu nunca imaginei viver.</li>
                     <li><i className="bi bi-heart-fill"></i> Cada risada compartilhada é uma nota na melodia do nosso amor.</li>
                     <li><i className="bi bi-heart-fill"></i> Você é a razão pela qual eu acredito em contos de fadas modernos.</li>
-                    <li><i className="bi bi-heart-fill"></i> Nosso amor é a prova de que as melhores histórias começam com um simples "olá".</li>
+                    <li><i className="bi bi-heart-fill"></i> Nosso amor é a prova de que as melhores histórias começam com um simples olhar.</li>
                 </ul>
             </Section>
 
             <Parallax image="/images/parallaxImages/bg-03.jpg">
                 <div className="heroTexts">
                     <h1>Nosso Futuro</h1>
-                    <p>Sonho com um futuro onde cada dia é uma nova oportunidade de amar você ainda mais.</p>
+                    <p>Sempre imaginei um futuro onde cada dia fosse uma nova oportunidade, no dia em que te conheci vi que realmente Deus planeja muito mais do que esperamos.</p>
                 </div>
             </Parallax>
             <Section>
                 <ul className="list-hero">
-                    <li><i className="bi bi-heart-fill"></i> Juntos, construiremos um futuro repleto de amor e felicidade.</li>
-                    <li><i className="bi bi-heart-fill"></i> Cada dia ao seu lado é uma promessa de um amanhã melhor.</li>
+                    <li><i className="bi bi-heart-fill"></i> Cada dia ao seu lado é uma certeza de um amanhã melhor.</li>
                     <li><i className="bi bi-heart-fill"></i> Sonho com um futuro onde cada dia é uma nova oportunidade de amar você ainda mais.</li>
                     <li><i className="bi bi-heart-fill"></i> Nosso amor é a base sólida sobre a qual construiremos nossos sonhos.</li>
-                    <li><i className="bi bi-heart-fill"></i> Com você, o futuro é um livro em branco, e eu mal posso esperar para escrever cada página juntos.</li>
+                    <li><i className="bi bi-heart-fill"></i> Com você, o futuro é um livro em branco, e eu estou muito feliz para escrever cada página com voçê ao meu lado.</li>
                 </ul>
             </Section>
             <Parallax image="/images/parallaxImages/bg-04.jpg">
