@@ -52,11 +52,6 @@ function HeroSection() {
                     <h2 className="secondTitle"><i className="bi bi-film"></i> Nossa Linha do Tempo</h2>
                 </div>
                 <Gallery />
-                <p className="intro-paragraph">
-                    Cada momento ao seu lado é uma página de uma história que eu quero escrever para sempre.
-                    <br />
-                    Uma jornada que começou com um olhar e floresceu no mais puro amor.
-                </p>
             </Section>
 
             <Parallax image="/images/parallaxImages/bg-02.jpg">
@@ -78,25 +73,24 @@ function HeroSection() {
             <Parallax image="/images/parallaxImages/bg-03.jpg">
                 <div className="heroTexts">
                     <h1>Nosso Futuro</h1>
-                    <p>Sempre imaginei um futuro onde cada dia fosse uma nova oportunidade, no dia em que te conheci vi que realmente Deus planeja muito mais do que esperamos.</p>
+                    <p>Sempre imaginei um futuro onde cada dia fosse uma nova oportunidade.</p>
+                    <p>No dia em que te conheci, percebi que Deus sempre planeja muito mais do que podemos sonhar.</p>
                 </div>
             </Parallax>
             <Section>
                 <ul className="list-hero">
                     <li><i className="bi bi-heart-fill"></i> Cada dia ao seu lado é uma certeza de um amanhã melhor.</li>
-                    <li><i className="bi bi-heart-fill"></i> Sonho com um futuro onde cada dia é uma nova oportunidade de amar você ainda mais.</li>
-                    <li><i className="bi bi-heart-fill"></i> Nosso amor é a base sólida sobre a qual construiremos nossos sonhos.</li>
-                    <li><i className="bi bi-heart-fill"></i> Com você, o futuro é um livro em branco, e eu estou muito feliz para escrever cada página com voçê ao meu lado.</li>
+                    <li><i className="bi bi-heart-fill"></i> Nosso amor é a base sólida sobre a qual realizaremos nossos sonhos.</li>
                 </ul>
             </Section>
             <Parallax image="/images/parallaxImages/bg-04.jpg">
                 <div className="heroTexts">
                     <h1>Nosso Amor</h1>
-                    <p>É a força que nos une, a luz que nos guia e a razão pela qual sorrimos todos os dias.</p>
+                    <p>Com você, sinto como se o futuro fosse um livro em branco, e eu estou muito feliz por escrever cada página com voçê ao meu lado.</p>
                 </div>
             </Parallax>
             <Section>
-                <h1 className="titulo-mural-do-tempo">Momentos Eternizaedos</h1>
+                <h1 className="titulo-mural-do-tempo"><i className="bi bi-calendar2-heart"></i> Momentos Eternizaedos</h1>
                 <div className="card-hover">
                     <CardEffect
                         image="/images/memoriesImages/three/1d3.jpg"
@@ -150,8 +144,8 @@ function HeroSection() {
             </Section>
             <Parallax image="/images/memoriesImages/three/6d3.jpg">
                 <div className="heroTexts">
-                    <h1>Nosso Compromisso</h1>
-                    <p>É amar, respeitar e apoiar um ao outro em todas as circunstâncias.</p>
+                    <h1>Nosso Compromisso de Amor</h1>
+                    <p>Constrímos uma vida baseada no amor, no respeito e na cumplicidade, a cada dia reafirmamos nosso compromisso de cuidar, apoiar e caminhar juntos, sempre, em qualque circunstância.</p>
                 </div>
             </Parallax>
             <Footer />
