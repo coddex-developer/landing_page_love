@@ -3,6 +3,17 @@
     --spn-color: red;
 }
 
+img {
+    image-rendering: auto;
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    object-fit: contain;
+    filter: contrast(110%) brightness(105%) saturate(115%);
+    transition: filter 0.3s ease;
+}
+
+
 .heroTexts {
     width: 100%;
     padding: 0 1rem;
@@ -94,7 +105,8 @@
 .sectionPrimary,
 .videosMp4,
 .heroTexts,
-.secondTitle, li{
+.secondTitle,
+li {
     opacity: 0;
     left: 0;
     transition: opacity 5.5s ease-in-out;
@@ -156,7 +168,7 @@
 
 }
 
-@media (max-width: 409px){
+@media (max-width: 409px) {
     .card-hover {
         grid-template-columns: 1fr;
     }
@@ -174,9 +186,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(7px);
     }
+
     100% {
         transform: translate(0);
     }
@@ -197,6 +211,7 @@
     .videosMp4 {
         width: 90%;
     }
+
     .list-hero li {
         width: 90%;
         padding: .8rem 0;
