@@ -17,6 +17,8 @@
 .textFooter {
     font-size: .7rem;
     text-align: center;
+    display: block;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: #E5E5E5;
     margin-top: 1.2rem;

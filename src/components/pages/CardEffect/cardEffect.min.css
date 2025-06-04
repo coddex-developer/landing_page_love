@@ -9,12 +9,11 @@
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s ease-in-out;
-  cursor: pointer;
 }
 
-.card-effect:hover {
+/*.card-effect:hover {
   transform: rotateY(180deg);
-}
+}*/
 
 .card-front,
 .card-back {
@@ -35,6 +34,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+}
+
+.card-front:hover {
+  scale: 1.05;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+  cursor: pointer;
 }
 
 .card-back {

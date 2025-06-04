@@ -3,8 +3,8 @@ function Footer() {
   return (
       <div className="containerFooter">
         <span className="pingFooter"></span>
-        <p className="textFooter">
-          &copy; {new Date().getFullYear()} Contruído com  <i className="bi bi-heart-fill"></i></p>
+        <a href="https://wa.me/+5561991556764" className="textFooter">
+          &copy; {new Date().getFullYear()} Construído com  <i className="bi bi-heart-fill"></i></a>
       </div>
   );
 }

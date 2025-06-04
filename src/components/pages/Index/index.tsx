@@ -5,28 +5,21 @@ import "./hero.min.css";
 import Footer from "../Footer";
 import Gallery from "../Gallery";
 import CardEffect from "../CardEffect";
+import ObserverEffect from "../../ObserverEffect/IntersectionObserver";
+import PlayerMusic from "../../PlayerMusic";
 
 function HeroSection() {
-
     const nomeA = "Juliana";
     const nomeB = "Rafael";
 
     useEffect(() => {
-
-        const classElements = document.querySelectorAll(".sectionPrimary, li, .videosMp4, .heroTexts, .secondTitle");
-        const intersectionObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            })
-        });
-        classElements.forEach(event => intersectionObserver.observe(event));
+        const observerElements = document.querySelectorAll(".sectionPrimary, li, .videosMp4, .heroTexts, .secondTitle");
+        ObserverEffect(observerElements)
     }, []);
 
     return (
         <>
-
+            <PlayerMusic />
             <Parallax image="/images/parallaxImages/bg-01.jpg">
                 <div className="heroTexts">
                     <h1 style={{ color: "#e5e5e5" }}>{nomeA} e {nomeB}</h1>
@@ -73,7 +66,6 @@ function HeroSection() {
             <Parallax image="/images/parallaxImages/bg-03.jpg">
                 <div className="heroTexts">
                     <h1>Nosso Futuro</h1>
-                    <p>Sempre imaginei um futuro onde cada dia fosse uma nova oportunidade.</p>
                     <p>No dia em que te conheci, percebi que Deus sempre planeja muito mais do que podemos sonhar.</p>
                 </div>
             </Parallax>
@@ -90,7 +82,7 @@ function HeroSection() {
                 </div>
             </Parallax>
             <Section>
-                <h1 className="titulo-mural-do-tempo"><i className="bi bi-calendar2-heart"></i> Momentos Eternizaedos</h1>
+                <h1 className="titulo-mural-do-tempo"><i className="bi bi-calendar2-heart"></i> Melhores momentos</h1>
                 <div className="card-hover">
                     <CardEffect
                         image="/images/memoriesImages/three/1d3.jpg"
