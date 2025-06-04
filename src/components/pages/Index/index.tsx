@@ -4,12 +4,15 @@ import Section from "../Section";
 import "./hero.min.css";
 import Footer from "../Footer";
 import Gallery from "../Gallery";
+import CardEffect from "../CardEffect";
 
 function HeroSection() {
+
     const nomeA = "Juliana";
     const nomeB = "Rafael";
 
     useEffect(() => {
+
         const classElements = document.querySelectorAll(".sectionPrimary, li, .videosMp4, .heroTexts, .secondTitle");
         const intersectionObserver = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -23,6 +26,7 @@ function HeroSection() {
 
     return (
         <>
+
             <Parallax image="/images/parallaxImages/bg-01.jpg">
                 <div className="heroTexts">
                     <h1 style={{ color: "#e5e5e5" }}>{nomeA} e {nomeB}</h1>
@@ -45,7 +49,7 @@ function HeroSection() {
 
             <Section className="sectionPrimary">
                 <div className="containerSection">
-                    <h2 className="secondTitle">Nossa Linha do Tempo</h2>
+                    <h2 className="secondTitle"><i className="bi bi-film"></i> Nossa Linha do Tempo</h2>
                 </div>
                 <Gallery />
                 <p className="intro-paragraph">
@@ -92,15 +96,59 @@ function HeroSection() {
                 </div>
             </Parallax>
             <Section>
-                <ul className="list-hero">
-                    <li><i className="bi bi-heart-fill"></i> Nosso amor é a força que nos une, a luz que nos guia e a razão pela qual sorrimos todos os dias.</li>
-                    <li><i className="bi bi-heart-fill"></i> Cada momento ao seu lado é um presente que eu valorizo profundamente.</li>
-                    <li><i className="bi bi-heart-fill"></i> Você é a razão pela qual eu acredito que o amor verdadeiro existe.</li>
-                    <li><i className="bi bi-heart-fill"></i> Nosso amor é uma jornada que eu quero explorar para sempre.</li>
-                    <li><i className="bi bi-heart-fill"></i> Com você, cada dia é uma nova oportunidade de amar e ser amado.</li>
-                </ul>
+                <h1 className="titulo-mural-do-tempo">Momentos Eternizaedos</h1>
+                <div className="card-hover">
+                    <CardEffect
+                        image="/images/memoriesImages/three/1d3.jpg"
+                        description="Mensagem 1"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/2d3.jpg"
+                        description="Mensagem 2"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/3d3.jpg"
+                        description="Mensagem 3"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/4d3.jpg"
+                        description="Mensagem 4"
+                    />                    
+                    <CardEffect
+                        image="/images/memoriesImages/three/9d3.jpg"
+                        description="Mensagem 5"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/10d3.jpg"
+                        description="Mensagem 6"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/11d3.jpg"
+                        description="Mensagem 7"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/12d3.jpg"
+                        description="Mensagem 8"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/8d3.jpg"
+                        description="Mensagem 9"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/6d3.jpg"
+                        description="Mensagem 10"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/7d3.jpg"
+                        description="Mensagem 11"
+                    />
+                    <CardEffect
+                        image="/images/memoriesImages/three/5d3.jpg"
+                        description="Mensagem 12"
+                    />
+                </div>
             </Section>
-            <Parallax image="/images/parallaxImages/bg-05.jpg">
+            <Parallax image="/images/memoriesImages/three/6d3.jpg">
                 <div className="heroTexts">
                     <h1>Nosso Compromisso</h1>
                     <p>É amar, respeitar e apoiar um ao outro em todas as circunstâncias.</p>
